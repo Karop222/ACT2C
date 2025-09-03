@@ -10,14 +10,14 @@ import javax.swing.JOptionPane;
  *
  * @author admin
  */
-public class NewJFrame2 extends javax.swing.JFrame {
+public class NewJFrame3 extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(NewJFrame2.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(NewJFrame3.class.getName());
 
     /**
-     * Creates new form NewJFrame2
+     * Creates new form NewJFrame3
      */
-    public NewJFrame2() {
+    public NewJFrame3() {
         initComponents();
     }
 
@@ -54,7 +54,7 @@ public class NewJFrame2 extends javax.swing.JFrame {
         jLabel2.setText("Number 2");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 76, -1, -1));
 
-        jButton1.setText("Subtraction");
+        jButton1.setText("Multiplication");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -116,11 +116,11 @@ public class NewJFrame2 extends javax.swing.JFrame {
         int num1 = Integer.parseInt(txtnum1.getText());
         int num2 = Integer.parseInt(txtnum2.getText());
 
-        int diff = num1 - num2;
+        int mul = num1 * num2;
         
-        txtres.setText(String.valueOf(diff));
+        txtres.setText(String.valueOf(mul));
 
-        JOptionPane.showMessageDialog(null, "the diff is: " + diff, "", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null, "the mul is: " + mul, "", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -170,7 +170,7 @@ public class NewJFrame2 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new NewJFrame2().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new NewJFrame3().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

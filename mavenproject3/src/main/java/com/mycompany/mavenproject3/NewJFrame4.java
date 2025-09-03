@@ -10,14 +10,14 @@ import javax.swing.JOptionPane;
  *
  * @author admin
  */
-public class NewJFrame2 extends javax.swing.JFrame {
+public class NewJFrame4 extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(NewJFrame2.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(NewJFrame4.class.getName());
 
     /**
-     * Creates new form NewJFrame2
+     * Creates new form NewJFrame4
      */
-    public NewJFrame2() {
+    public NewJFrame4() {
         initComponents();
     }
 
@@ -54,13 +54,13 @@ public class NewJFrame2 extends javax.swing.JFrame {
         jLabel2.setText("Number 2");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 76, -1, -1));
 
-        jButton1.setText("Subtraction");
+        jButton1.setText("Division");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, -1, -1));
 
         txtres.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         getContentPane().add(txtres, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 154, 119, -1));
@@ -116,11 +116,11 @@ public class NewJFrame2 extends javax.swing.JFrame {
         int num1 = Integer.parseInt(txtnum1.getText());
         int num2 = Integer.parseInt(txtnum2.getText());
 
-        int diff = num1 - num2;
+        int div = num1 / num2;
         
-        txtres.setText(String.valueOf(diff));
+        txtres.setText(String.valueOf(div));
 
-        JOptionPane.showMessageDialog(null, "the diff is: " + diff, "", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null, "the div is: " + div, "", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -170,7 +170,7 @@ public class NewJFrame2 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new NewJFrame2().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new NewJFrame4().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
